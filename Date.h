@@ -15,6 +15,11 @@ public:
             this->year = year;
         }
     }
+
+    int GetYear(){
+        return year;
+    }
+
     void SetMonth(int month)
     {
         if (month < 1) {
@@ -25,6 +30,11 @@ public:
             this->month = month;
         }
     }
+
+    int GetMonth(){
+        return month;
+    }
+
     void SetDay(int day)
     {
         if (day < 1) {
@@ -35,6 +45,12 @@ public:
             this->day = day;
         }
     }
+
+    int GetDay(){
+        return day;
+    }
+
+
 
     Date() {}
     Date(int year, int month, int day)
