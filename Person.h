@@ -30,6 +30,12 @@ public:
             flag_firstName = false;
         }
     }
+
+    string GetFirstName(){
+        return firstName;
+    }
+
+
     void SetLastName(string lastName)
     {
         if (flag_lastName) {
@@ -38,6 +44,12 @@ public:
         }
     }
 
+    string GetLastName(){
+        return lastName;
+    }
+
+
+
     void SetDateOfBirth(Date date)
     {
         if (flag_dateOfBirth) {
@@ -45,6 +57,11 @@ public:
             flag_dateOfBirth = false;
         }
     }
+
+    Date GetDateOfBirth() {
+        return dateOfBirth;
+    }
+
 
     Person() {}
     Person(string firstName, string lastName, Date dateOfBirth, Address address, vector<Phone> phones)
